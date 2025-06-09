@@ -70,7 +70,7 @@ jobs:
             build/app/outputs/apk/release/*
             build/ios/iphoneos/app.ipa
           tag: v1.0.${{ github.run_number }}
-          token: ${{ secrets.TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       # Optional: Upload APK to GitHub Actions artifacts
       # - name: Upload APK as Artifact
